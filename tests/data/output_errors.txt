@@ -1,0 +1,997 @@
+/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/pkg_resources/__init__.py:193: RuntimeWarning: You have iterated over the result of pkg_resources.parse_version. This is a legacy behavior which is inconsistent with the new version class introduced in setuptools 8.0. In most cases, conversion to a tuple is unnecessary. For comparison of versions, sort the Version instances directly. If you have another use case requiring the tuple, please file a bug with the setuptools project describing that need.
+  stacklevel=1,
+............EE..................E..EE.....EE.E.......................
+======================================================================
+ERROR: test_set_terminal_status_with_allowed_role (openprocurement.contracting.ceasefire.tests.contract_test.ContractResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/contract_test.py", line 190, in test_set_terminal_status_with_allowed_role
+    contract, _ = prepare_milestones_all_met(self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 221, in prepare_milestones_all_met
+    contract, milestones = prepare_milestones_reporting(test_case, contract_data)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 212, in prepare_milestones_reporting
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5bbf2d0>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5bbf2d0> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified None -> 2019-01-28T10:45:14.066671+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract af564f0e28794287a137cf6fc8810e3d (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'1-64c65956da976f05c3d157e8a34d653b'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'1-64c65956da976f05c3d157e8a34d653b'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified 2019-01-28T10:45:14.066671+02:00 -> 2019-01-28T10:45:14.102314+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: af564f0e28794287a137cf6fc8810e3d
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/documents?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'2-8f885b22ec6c74d3e7637fbed267ab9d'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'2-8f885b22ec6c74d3e7637fbed267ab9d'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified 2019-01-28T10:45:14.102314+02:00 -> 2019-01-28T10:45:14.127745+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: af564f0e28794287a137cf6fc8810e3d documentID: 3f98e430a67148f9a02ea7eba8b1cc37
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/documents?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'3-2ef965529e127249b91a8f1971890336'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'3-2ef965529e127249b91a8f1971890336'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified 2019-01-28T10:45:14.127745+02:00 -> 2019-01-28T10:45:14.152609+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: af564f0e28794287a137cf6fc8810e3d documentID: 0d957212833948e383e3e1c37f4e6b28
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/documents?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'4-7465f8e1b6d1cd5df505a00777ce0f03'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'4-7465f8e1b6d1cd5df505a00777ce0f03'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified 2019-01-28T10:45:14.152609+02:00 -> 2019-01-28T10:45:14.185171+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: af564f0e28794287a137cf6fc8810e3d documentID: 1105c956261d4af9a10183dbec136e64
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/milestones/ed710eb4261e4fbba4da224612684d05?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'5-a070bc6fa13743993715b1dd5144c1a5'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: af564f0e28794287a137cf6fc8810e3d
+openprocurement.contracting.core: INFO: Saved contract af564f0e28794287a137cf6fc8810e3d: dateModified 2019-01-28T10:45:14.185171+02:00 -> 2019-01-28T10:45:14.212300+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone ed710eb4261e4fbba4da224612684d05
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d (view name u'' against context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'6-deefcf4eaa8f46495611d8b652c7f9a1'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5bbf4d0> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/milestones/aa755ab8b19041168f048373a330dbd8?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract') in ACL [('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'edit_contract'), ('Allow', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'upload_contract_documents')] on context <Contract:u'af564f0e28794287a137cf6fc8810e3d'@u'6-deefcf4eaa8f46495611d8b652c7f9a1'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_4993c705ce0d4eb58a3ff09377cb24c0', 'broker5_7f666e0d7bfdad06ae6c317287822babcb070a3f3dbb91b186fcb091e02405c0b9f4454bd78f1d3e58c0d915ff890a9b0f3be1a92361ae2b8e13631f9c46aae1']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/milestones/aa755ab8b19041168f048373a330dbd8?acc_token=4993c705ce0d4eb58a3ff09377cb24c0
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/milestones/aa755ab8b19041168f048373a330dbd8?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/af564f0e28794287a137cf6fc8810e3d/milestones/aa755ab8b19041168f048373a330dbd8?acc_token=4993c705ce0d4eb58a3ff09377cb24c0 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_upload_document_in_terminal_status (openprocurement.contracting.ceasefire.tests.contract_test.ContractResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/contract_test.py", line 245, in test_upload_document_in_terminal_status
+    contract, _ = prepare_milestones_all_met(self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 221, in prepare_milestones_all_met
+    contract, milestones = prepare_milestones_reporting(test_case, contract_data)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 212, in prepare_milestones_reporting
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5beac50>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5beac50> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified None -> 2019-01-28T10:45:14.294059+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract fc178e62363843db8412aa4db7aabb8b (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'1-83cc04a00d4e9ff4b1edfadebc107c03'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'1-83cc04a00d4e9ff4b1edfadebc107c03'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified 2019-01-28T10:45:14.294059+02:00 -> 2019-01-28T10:45:14.333802+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: fc178e62363843db8412aa4db7aabb8b
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/documents?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'2-bdd629ab57a3473362746ad2d6c73e24'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'2-bdd629ab57a3473362746ad2d6c73e24'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified 2019-01-28T10:45:14.333802+02:00 -> 2019-01-28T10:45:14.359581+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: fc178e62363843db8412aa4db7aabb8b documentID: e89a6d9126ad4ee8a49d8573813b18dc
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/documents?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'3-9486c3b35fb5e49aa4f0f107fde96385'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'3-9486c3b35fb5e49aa4f0f107fde96385'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified 2019-01-28T10:45:14.359581+02:00 -> 2019-01-28T10:45:14.383499+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: fc178e62363843db8412aa4db7aabb8b documentID: b59da1ca0c4a45fe8feb869e33d319e9
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/documents?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'4-86f17bb0664f7633cb6080cabcfa21e1'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'4-86f17bb0664f7633cb6080cabcfa21e1'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified 2019-01-28T10:45:14.383499+02:00 -> 2019-01-28T10:45:14.409268+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: fc178e62363843db8412aa4db7aabb8b documentID: e175fa85302a4d0f9c4ff5de65bb6e9e
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/milestones/287e4d7b77e441988871d336a2490c53?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'5-e12577e6522a3b0ed7eaf8d7a54b199a'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: fc178e62363843db8412aa4db7aabb8b
+openprocurement.contracting.core: INFO: Saved contract fc178e62363843db8412aa4db7aabb8b: dateModified 2019-01-28T10:45:14.409268+02:00 -> 2019-01-28T10:45:14.435784+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone 287e4d7b77e441988871d336a2490c53
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b (view name u'' against context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'6-407a0cd5023bff2f94e52574d36b39e0'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5bf3b10> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/milestones/eedf8635258648a8a8879169ec9e34b4?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract') in ACL [('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'edit_contract'), ('Allow', 'broker5_8956ed87fef248028a98192a767c1a1b', 'upload_contract_documents')] on context <Contract:u'fc178e62363843db8412aa4db7aabb8b'@u'6-407a0cd5023bff2f94e52574d36b39e0'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8956ed87fef248028a98192a767c1a1b', 'broker5_90d2a58ca372e4d5fa1e5be95753e4af685f67ee759244b4d530b73fca0863b4fe4d4da4724662a68ce8a84c3d5ee7adb162d14072c607d22f8fc34e4458e9c3']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/milestones/eedf8635258648a8a8879169ec9e34b4?acc_token=8956ed87fef248028a98192a767c1a1b
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/milestones/eedf8635258648a8a8879169ec9e34b4?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/fc178e62363843db8412aa4db7aabb8b/milestones/eedf8635258648a8a8879169ec9e34b4?acc_token=8956ed87fef248028a98192a767c1a1b (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_set_dueDate_reporting_auto (openprocurement.contracting.ceasefire.tests.managers_test.CeasefireMilestoneManagerTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/managers_test.py", line 154, in test_set_dueDate_reporting_auto
+    manager.set_dueDate(reporting_milestone_mock, self.contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'dateMet'
+
+======================================================================
+ERROR: test_milestone_patch_approval_dateMet (openprocurement.contracting.ceasefire.tests.milestone_test.MilestoneResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/milestone_test.py", line 112, in test_milestone_patch_approval_dateMet
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c599a690>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c599a690> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified None -> 2019-01-28T10:45:15.637026+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract b6173a4fbe604adba2146ea23f667e07 (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'1-ec0562277c342334596524be133bea71'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'1-ec0562277c342334596524be133bea71'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified 2019-01-28T10:45:15.637026+02:00 -> 2019-01-28T10:45:15.686487+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: b6173a4fbe604adba2146ea23f667e07
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/documents?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'2-56750e7c048f50a4fd8cb9acc86c279a'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'2-56750e7c048f50a4fd8cb9acc86c279a'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified 2019-01-28T10:45:15.686487+02:00 -> 2019-01-28T10:45:15.717692+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: b6173a4fbe604adba2146ea23f667e07 documentID: 86dd35f316904e968e4034d7bf6db7f0
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/documents?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'3-c20403d4c3e202e7d8b274dd3c092e95'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'3-c20403d4c3e202e7d8b274dd3c092e95'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified 2019-01-28T10:45:15.717692+02:00 -> 2019-01-28T10:45:15.747153+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: b6173a4fbe604adba2146ea23f667e07 documentID: 1c96d88c96704edfb4efc083147f6b6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/documents?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'4-c6ff9ae494b2a8b62786d29b4b1890d3'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'4-c6ff9ae494b2a8b62786d29b4b1890d3'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified 2019-01-28T10:45:15.747153+02:00 -> 2019-01-28T10:45:15.780511+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: b6173a4fbe604adba2146ea23f667e07 documentID: 9d3a2906a7694663a2f7a5fd0b266f77
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/milestones/bb367a9691b84cf2a19ae5812291fd8c?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'5-f6ac285704923c46e4bb55d465e876f0'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: b6173a4fbe604adba2146ea23f667e07
+openprocurement.contracting.core: INFO: Saved contract b6173a4fbe604adba2146ea23f667e07: dateModified 2019-01-28T10:45:15.780511+02:00 -> 2019-01-28T10:45:15.813572+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone bb367a9691b84cf2a19ae5812291fd8c
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07 (view name u'' against context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'6-a09089a08ab78c7fb97291ea0c8fc3e4'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5956b90> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/milestones/ac9c828a63d34becbc4d8439010647b3?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract') in ACL [('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'edit_contract'), ('Allow', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'upload_contract_documents')] on context <Contract:u'b6173a4fbe604adba2146ea23f667e07'@u'6-a09089a08ab78c7fb97291ea0c8fc3e4'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_82e7337f9c1349d28b1ad3882da86093', 'broker5_e572f0e5228de5285137944af149723fa7bed0eaf69dd38b4a45d745c2beed6b1cf851559cb9b01960170124b28b1cb82f8ba907f5080364d38b1aa6835d2574']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/milestones/ac9c828a63d34becbc4d8439010647b3?acc_token=82e7337f9c1349d28b1ad3882da86093
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/milestones/ac9c828a63d34becbc4d8439010647b3?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/b6173a4fbe604adba2146ea23f667e07/milestones/ac9c828a63d34becbc4d8439010647b3?acc_token=82e7337f9c1349d28b1ad3882da86093 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_milestone_patch_approval_dateMet_partially_met (openprocurement.contracting.ceasefire.tests.milestone_test.MilestoneResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/milestone_test.py", line 135, in test_milestone_patch_approval_dateMet_partially_met
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5921950>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5921950> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified None -> 2019-01-28T10:45:15.907692+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract 0cf23bf71a534d13b87df1dc68c8ac58 (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'1-a999d275f542f8e4504ff4580552a2dc'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'1-a999d275f542f8e4504ff4580552a2dc'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified 2019-01-28T10:45:15.907692+02:00 -> 2019-01-28T10:45:15.942119+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: 0cf23bf71a534d13b87df1dc68c8ac58
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/documents?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'2-81b331a24dbe181e903877cc23bfaf28'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'2-81b331a24dbe181e903877cc23bfaf28'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified 2019-01-28T10:45:15.942119+02:00 -> 2019-01-28T10:45:15.964217+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0cf23bf71a534d13b87df1dc68c8ac58 documentID: ca27c8431a284dcea35ce82eb25c75a2
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/documents?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'3-7713b9e6332653bcefd65810c26fd027'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'3-7713b9e6332653bcefd65810c26fd027'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified 2019-01-28T10:45:15.964217+02:00 -> 2019-01-28T10:45:15.988011+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0cf23bf71a534d13b87df1dc68c8ac58 documentID: 24edfe5cda274123a2eed44b39a9c4f8
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/documents?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'4-b362eaa2fa45c1c5bb9d4506348aeaca'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'4-b362eaa2fa45c1c5bb9d4506348aeaca'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified 2019-01-28T10:45:15.988011+02:00 -> 2019-01-28T10:45:16.012965+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0cf23bf71a534d13b87df1dc68c8ac58 documentID: 853212ea724645ae972064382da3a0e3
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/milestones/3642921c057b4fa195148b84dc735e3d?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'5-e33aff4dae5a34637391727d675cf4aa'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: 0cf23bf71a534d13b87df1dc68c8ac58
+openprocurement.contracting.core: INFO: Saved contract 0cf23bf71a534d13b87df1dc68c8ac58: dateModified 2019-01-28T10:45:16.012965+02:00 -> 2019-01-28T10:45:16.041510+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone 3642921c057b4fa195148b84dc735e3d
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58 (view name u'' against context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'6-02953a77a3ca3c04d9d017e5a3401571'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58fc890> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/milestones/8edb0bfff5de4b5eaea4a2d86708343a?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract') in ACL [('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'edit_contract'), ('Allow', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'upload_contract_documents')] on context <Contract:u'0cf23bf71a534d13b87df1dc68c8ac58'@u'6-02953a77a3ca3c04d9d017e5a3401571'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_1cd65a3c7bf149d78a9ad43fcfc843e7', 'broker5_8cd9d734edba3d5667d4c2958d4577dceaaa9eeb2486b466d399eb86cf1dca15cdcc00b8d2243feb308ed56b7d443015c1e3ff13155c2d0b7d81ed2cb5e9d6dc']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/milestones/8edb0bfff5de4b5eaea4a2d86708343a?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/milestones/8edb0bfff5de4b5eaea4a2d86708343a?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0cf23bf71a534d13b87df1dc68c8ac58/milestones/8edb0bfff5de4b5eaea4a2d86708343a?acc_token=1cd65a3c7bf149d78a9ad43fcfc843e7 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_milestone_patch_reporting_dateMet (openprocurement.contracting.ceasefire.tests.milestone_test.MilestoneResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/milestone_test.py", line 149, in test_milestone_patch_reporting_dateMet
+    contract, milestones = prepare_milestones_reporting(self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 212, in prepare_milestones_reporting
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c599d590>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c599d590> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified None -> 2019-01-28T10:45:17.424327+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract 5d532dfdbb7a45c0b755286116721ac0 (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'1-9ed163730375058f46ca9f468539de0f'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'1-9ed163730375058f46ca9f468539de0f'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified 2019-01-28T10:45:17.424327+02:00 -> 2019-01-28T10:45:17.472306+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: 5d532dfdbb7a45c0b755286116721ac0
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/documents?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'2-52dc6288b43d1cd258d28ef74978d55a'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'2-52dc6288b43d1cd258d28ef74978d55a'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified 2019-01-28T10:45:17.472306+02:00 -> 2019-01-28T10:45:17.510770+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 5d532dfdbb7a45c0b755286116721ac0 documentID: 469abf80875f4532abfb9a7649b5cb54
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/documents?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'3-5a85175334c505a649f94be597ff636a'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'3-5a85175334c505a649f94be597ff636a'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified 2019-01-28T10:45:17.510770+02:00 -> 2019-01-28T10:45:17.533436+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 5d532dfdbb7a45c0b755286116721ac0 documentID: c8a40c372cb448669bf4d022b43a75e3
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/documents?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'4-fae97fe4378595c6951f325dc37f7948'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'4-fae97fe4378595c6951f325dc37f7948'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified 2019-01-28T10:45:17.533436+02:00 -> 2019-01-28T10:45:17.560465+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 5d532dfdbb7a45c0b755286116721ac0 documentID: 672399ffc0304d079212061f6fe69f56
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/milestones/35b69f9149484d359f8dd3f6aa0dd766?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'5-d24d0e18807cfcce34d922dff092d470'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: 5d532dfdbb7a45c0b755286116721ac0
+openprocurement.contracting.core: INFO: Saved contract 5d532dfdbb7a45c0b755286116721ac0: dateModified 2019-01-28T10:45:17.560465+02:00 -> 2019-01-28T10:45:17.586012+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone 35b69f9149484d359f8dd3f6aa0dd766
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0 (view name u'' against context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'6-3736c654c4ffcd5138590465ff6b325f'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58cb5d0> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/milestones/f6f0f010086542a7bee773c8c1899f92?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract') in ACL [('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'edit_contract'), ('Allow', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'upload_contract_documents')] on context <Contract:u'5d532dfdbb7a45c0b755286116721ac0'@u'6-3736c654c4ffcd5138590465ff6b325f'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_e5c8cb28c0334ecc9412728cd7780993', 'broker5_868b2f4ee313012068980c842971aea86a6a1e4069bb290c3f2fe213123e613032d617d63fe516547e5b7abdbf7cdba22f5f3f3a9f07c68d9a981b9cf3ad5d5e']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/milestones/f6f0f010086542a7bee773c8c1899f92?acc_token=e5c8cb28c0334ecc9412728cd7780993
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/milestones/f6f0f010086542a7bee773c8c1899f92?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/5d532dfdbb7a45c0b755286116721ac0/milestones/f6f0f010086542a7bee773c8c1899f92?acc_token=e5c8cb28c0334ecc9412728cd7780993 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_milestone_patch_reporting_dateMet_partiallyMet (openprocurement.contracting.ceasefire.tests.milestone_test.MilestoneResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/milestone_test.py", line 169, in test_milestone_patch_reporting_dateMet_partiallyMet
+    contract, milestones = prepare_milestones_reporting(self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 212, in prepare_milestones_reporting
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58cb810>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58cb810> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified None -> 2019-01-28T10:45:17.663986+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract bdefbd106381458bb23a4d26f0b5f019 (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'1-91a55f7d4a3f2b2593595688192eb28c'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'1-91a55f7d4a3f2b2593595688192eb28c'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified 2019-01-28T10:45:17.663986+02:00 -> 2019-01-28T10:45:17.699786+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: bdefbd106381458bb23a4d26f0b5f019
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/documents?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'2-5381ad5254f90893860b4cce2ca5da0e'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'2-5381ad5254f90893860b4cce2ca5da0e'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified 2019-01-28T10:45:17.699786+02:00 -> 2019-01-28T10:45:17.722156+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: bdefbd106381458bb23a4d26f0b5f019 documentID: ef08f764a6924e738e5b1f7153a194d4
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/documents?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'3-2d623e39002362c41e1ddbeec2e44672'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'3-2d623e39002362c41e1ddbeec2e44672'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified 2019-01-28T10:45:17.722156+02:00 -> 2019-01-28T10:45:17.746382+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: bdefbd106381458bb23a4d26f0b5f019 documentID: d5e6b69f1b054e40953f136f7004631c
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/documents?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'4-b32e4c19b6fe92129354a21e98fda599'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'4-b32e4c19b6fe92129354a21e98fda599'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified 2019-01-28T10:45:17.746382+02:00 -> 2019-01-28T10:45:17.774091+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: bdefbd106381458bb23a4d26f0b5f019 documentID: 889fe82b169949fc82319bf390891ece
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/milestones/24c5499f1bd444b69e8d77362e3122b5?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'5-bb23c11cfe0fb7f0274697a44913861b'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: bdefbd106381458bb23a4d26f0b5f019
+openprocurement.contracting.core: INFO: Saved contract bdefbd106381458bb23a4d26f0b5f019: dateModified 2019-01-28T10:45:17.774091+02:00 -> 2019-01-28T10:45:17.802890+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone 24c5499f1bd444b69e8d77362e3122b5
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019 (view name u'' against context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'6-0d27814d092f47e98810a885eeba48bc'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58a9ed0> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/milestones/e353d28fbadd4ff4abcf230287c9f28e?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract') in ACL [('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'edit_contract'), ('Allow', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'upload_contract_documents')] on context <Contract:u'bdefbd106381458bb23a4d26f0b5f019'@u'6-0d27814d092f47e98810a885eeba48bc'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_8ac847cf395e46cc8fb573c971ced214', 'broker5_5f3cec0bda18dced113160c93fbdcea786a8f4954a7d35d0ded26e88b338fd4f45076009da42c72caf45c40550392b361a295554c46b8e3e28fd5e25db63464d']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/milestones/e353d28fbadd4ff4abcf230287c9f28e?acc_token=8ac847cf395e46cc8fb573c971ced214
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/milestones/e353d28fbadd4ff4abcf230287c9f28e?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/bdefbd106381458bb23a4d26f0b5f019/milestones/e353d28fbadd4ff4abcf230287c9f28e?acc_token=8ac847cf395e46cc8fb573c971ced214 (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+======================================================================
+ERROR: test_milestone_patch_reporting_invalid_dateMet (openprocurement.contracting.ceasefire.tests.milestone_test.MilestoneResourceTest)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/milestone_test.py", line 189, in test_milestone_patch_reporting_invalid_dateMet
+    contract, milestones = prepare_milestones_reporting(self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 212, in prepare_milestones_reporting
+    {'data': {'dateMet': dateMet_to_set.isoformat()}}
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/tests/fixtures/helpers.py", line 64, in patch_milestone
+    status=status,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/utils.py", line 37, in wrapper
+    return self._gen_request(method, url, **kw)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 736, in _gen_request
+    expect_errors=expect_errors)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/app.py", line 606, in do_request
+    res = req.get_response(app, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1309, in send
+    application, catch_exc_info=True)
+  File "/home/dmytriv/.virtualenvs/p27/lib/python2.7/site-packages/webob/request.py", line 1277, in call_application
+    app_iter = application(self.environ, start_response)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/WebTest-2.0.20-py2.7.egg/webtest/lint.py", line 198, in lint_app
+    iterator = application(environ, start_response_wrapper)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 270, in __call__
+    response = self.execution_policy(environ, self)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 278, in default_execution_policy
+    return request.invoke_exception_view(reraise=True)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 723, in invoke_exception_view
+    reraise_(*exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 276, in default_execution_policy
+    return router.invoke_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 249, in invoke_request
+    response = handle_request(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 41, in excview_tween
+    response = _error_handler(request, exc)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 12, in _error_handler
+    response = request.invoke_exception_view(exc_info)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 719, in invoke_exception_view
+    request_iface=request_iface.combined,
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 409, in viewresult_to_response
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/tweens.py", line 39, in excview_tween
+    response = handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 115, in exclog_tween
+    _handle_error(request, getLogger, get_message)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+-------------------- >> begin captured logging << --------------------
+openprocurement.api.design.init: INFO: Design document '_design/conflicts' was successfully updated. Current revision: 1-51ea8eee925f41f2fa0748ce3c631434
+openprocurement.api.design.init: INFO: Design document '_design/contracts' was successfully updated. Current revision: 1-508019804f5603bee7cc9a9c2a6c7e6a
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts (view name u'' against context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5956410>): ACLAllowed permission 'create_contract' via ACE ('Allow', 'g:brokers', 'create_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c5956410> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified None -> 2019-01-28T10:45:18.122790+02:00
+openprocurement.contracting.core.views.contract: INFO: Created contract 0d5552fbe4104b4ba72b52cba62b61ce (a930574bf8cd405cb7f9c9ed4ca68061)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'1-f9bae4b4007584104e19b70cecd1cbf0'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'1-f9bae4b4007584104e19b70cecd1cbf0'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified 2019-01-28T10:45:18.122790+02:00 -> 2019-01-28T10:45:18.164773+02:00
+openprocurement.contracting.ceasefire.views.contract: INFO: Updated ceasefire contract. Status: active.payment, id: 0d5552fbe4104b4ba72b52cba62b61ce
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/documents?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'2-0f96867ff00a277637aa03a3c9cfaa40'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'2-0f96867ff00a277637aa03a3c9cfaa40'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified 2019-01-28T10:45:18.164773+02:00 -> 2019-01-28T10:45:18.189179+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0d5552fbe4104b4ba72b52cba62b61ce documentID: f2d3e1c137e8433d8e86178d3c956fe7
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/documents?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'3-0bd55ca718698f9c765b51d448eeb29c'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'3-0bd55ca718698f9c765b51d448eeb29c'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified 2019-01-28T10:45:18.189179+02:00 -> 2019-01-28T10:45:18.213090+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0d5552fbe4104b4ba72b52cba62b61ce documentID: 34ab855420c64946a92348aed89f4ae1
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/documents?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'4-ba1ee138084952b75cbd5d20d5b536ec'>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'4-ba1ee138084952b75cbd5d20d5b536ec'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified 2019-01-28T10:45:18.213090+02:00 -> 2019-01-28T10:45:18.238835+02:00
+openprocurement.contracting.core.views.contract_document: INFO: Created contract document. contract ID: 0d5552fbe4104b4ba72b52cba62b61ce documentID: fd5f881eb69c43d1a105c282c6cd71fc
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/milestones/020830a5a05140afa4304250e2b2a1ad?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'5-46e34481532c08067476e8ece861f30f'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+openprocurement.contracting.core: INFO: Evaluated and updated ceasefire contract status from it's milestones. Status: active.approval, id: 0d5552fbe4104b4ba72b52cba62b61ce
+openprocurement.contracting.core: INFO: Saved contract 0d5552fbe4104b4ba72b52cba62b61ce: dateModified 2019-01-28T10:45:18.238835+02:00 -> 2019-01-28T10:45:18.266390+02:00
+openprocurement.contracting.ceasefire.views.milestone: INFO: Updated ceasefire milestone 020830a5a05140afa4304250e2b2a1ad
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce (view name u'' against context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'6-9a87c99507b5e4982ae4fe4d3f7abd5a'>): ACLAllowed permission 'view_contract' via ACE ('Allow', 'system.Everyone', 'view_contract') in ACL [('Allow', 'system.Everyone', 'view_listing'), ('Allow', 'system.Everyone', 'view_contract'), ('Allow', 'g:contracting', 'create_contract'), ('Allow', 'g:caravan', 'view_contract'), ('Allow', 'g:caravan', 'edit_contract'), ('Allow', 'g:brokers', 'create_contract'), ('Allow', 'g:convoy', 'create_contract'), ('Allow', 'g:Administrator', 'edit_contract')] on context <openprocurement.contracting.core.traversal.Root object at 0x7fd2c58df110> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5']
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/milestones/0b8216553a394e9bbb1df44108007e99?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context <Milestone: Milestone object>): ACLAllowed permission 'edit_contract' via ACE ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract') in ACL [('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'edit_contract'), ('Allow', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'upload_contract_documents')] on context <Contract:u'0d5552fbe4104b4ba72b52cba62b61ce'@u'6-9a87c99507b5e4982ae4fe4d3f7abd5a'> for principals ['system.Everyone', 'system.Authenticated', 'broker5', 'g:brokers', 'a:5', 'broker5_9897cff4a1aa4c04b6632edf4f85da3d', 'broker5_a680de890ecc8437e403735b76df355e4b6b7c07de018b3f9d63e0e325c7d33b2ef4ac444413003e8739d830047e03cd49ccd16af94d561fcd795be372ce6125']
+exc_logger: ERROR: http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/milestones/0b8216553a394e9bbb1df44108007e99?acc_token=9897cff4a1aa4c04b6632edf4f85da3d
+Traceback (most recent call last):
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid_exclog-0.7-py2.7.egg/pyramid_exclog/__init__.py", line 111, in exclog_tween
+    return handler(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/router.py", line 156, in handle_request
+    view_name
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/view.py", line 617, in _call_view
+    response = view_callable(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/config/views.py", line 181, in __call__
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 389, in attr_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 367, in predicate_wrapper
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 351, in authdebug_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 300, in secured_view
+    return view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 438, in rendered_view
+    result = view(context, request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/pyramid-1.9-py2.7.egg/pyramid/viewderivers.py", line 147, in _requestonly_view
+    response = view(request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/eggs/cornice-3.1.0-py2.7.egg/cornice/service.py", line 494, in wrapper
+    response = view_()
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/views/milestone.py", line 42, in patch
+    manager.change_milestone(self.request)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.api/src/openprocurement/api/utils/decorators.py", line 14, in wrapper
+    return func(*args, **kwargs)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 84, in change_milestone
+    self.set_dueDate(next_milestone, contract)
+  File "/home/dmytriv/Projects/local/openprocurement.buildout/src/openprocurement.contracting.ceasefire/openprocurement/contracting/ceasefire/adapters/milestone_manager.py", line 125, in set_dueDate
+    approval_milestone.dateMet.year + MILESTONE_REPORTING_DUEDATE_OFFSET_YEARS,
+AttributeError: 'NoneType' object has no attribute 'year'
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/milestones/0b8216553a394e9bbb1df44108007e99?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+openprocurement.api: DEBUG: debug_authorization of url http://localhost/api/2.5/contracts/0d5552fbe4104b4ba72b52cba62b61ce/milestones/0b8216553a394e9bbb1df44108007e99?acc_token=9897cff4a1aa4c04b6632edf4f85da3d (view name u'' against context AttributeError("'NoneType' object has no attribute 'year'",)): Allowed (NO_PERMISSION_REQUIRED)
+--------------------- >> end captured logging << ---------------------
+
+----------------------------------------------------------------------
+Ran 69 tests in 10.178s
+
+FAILED (errors=8)
